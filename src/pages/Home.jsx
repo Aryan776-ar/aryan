@@ -4,38 +4,45 @@ import phone15 from "../assets/15.jpg";
 import phone16 from "../assets/16.jpg";
 import phone17 from "../assets/i17.jpg";
 import phoneair from "../assets/air.jpg";
+import iphone17promax from "../assets/iphone17promax.jpg";
 export default function HomePage() {
   const phones = [
     {
       id: 1,
       name: "iPhone 14 Pro Max",
-      price: "$999",
+      price: "Rs191,990",
       image:phone14,
     },
     {
       id: 2,
       name: "iPhone 15 Pro Max",
-      price: "$799",
+      price: "Rs210,000",
       image:phone15,
     },
     {
       id: 3,
       name: "iPhone 16 Pro Max",
-      price: "$699",
+      price: "Rs207,000",
       image:phone16,
     },
       {
       id: 4,
       name: "iPhone 17",
-      price: "$699",
+      price: "Rs161,599",
       image:phone17,
     },
     
      {
       id: 5,
       name: "iPhone Air",
-      price: "$699",
+      price: "Rs178,999",
       image:phoneair,
+    },
+     {
+      id: 6,
+      name: "iPhone 17 Pro Max",
+      price: "Rs239,999",
+      image: iphone17promax,
     },
   ];
 
