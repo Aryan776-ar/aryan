@@ -44,7 +44,7 @@ export default function Cart() {
                     <div>
 
                       <h3>{item.name}</h3>
-                      <p className="text-gray-400">${item.price}</p>
+                      <p className="text-gray-400">Rs.{item.price.toLocaleString()}</p>
 
                       <div className="flex gap-3 mt-3">
 
@@ -77,7 +77,7 @@ export default function Cart() {
                   <div className="text-right">
 
                     <p>
-                      ${item.price * item.quantity}
+                      Rs.{(item.price * item.quantity).toLocaleString()}
                     </p>
 
                     <button
@@ -103,7 +103,7 @@ export default function Cart() {
 
               <div className="flex justify-between mb-4">
                 <span>Subtotal</span>
-                <span>${subtotal}</span>
+                <span>Rs.{subtotal.toLocaleString()}</span>
               </div>
 
               <div className="flex justify-between mb-4">
@@ -113,7 +113,7 @@ export default function Cart() {
 
               <div className="flex justify-between text-lg font-bold">
                 <span>Total</span>
-                <span>${subtotal}</span>
+                <span>Rs.{subtotal.toLocaleString()}</span>
               </div>
 
               <button className="w-full mt-8 bg-white text-black py-3 rounded-full">

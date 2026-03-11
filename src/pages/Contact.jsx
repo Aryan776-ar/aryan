@@ -1,6 +1,15 @@
 import Navbar from "../components/nav";
+import { useState } from "react";
 
 export default function Contact() {
+
+  const [sent, setSent] = useState(false);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setSent(true);
+  };
+
   return (
     <>
       <Navbar /> 
@@ -10,13 +19,13 @@ export default function Contact() {
           Contact Us
         </h1>
 
-        <form className="space-y-6">
+        <form className="space-y-6" onSubmit={handleSubmit}>
           <div>
             <label className="block mb-2 text-gray-600">Full Name</label>
             <input
               type="text"
               placeholder="John Doe"
-              className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+              className="w-full border border-gray-300 rounded-lg px-4 py-3"
             />
           </div>
 
@@ -25,7 +34,7 @@ export default function Contact() {
             <input
               type="email"
               placeholder="you@example.com"
-              className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+              className="w-full border border-gray-300 rounded-lg px-4 py-3"
             />
           </div>
 
@@ -34,7 +43,7 @@ export default function Contact() {
             <textarea
               rows="4"
               placeholder="Write your message..."
-              className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+              className="w-full border border-gray-300 rounded-lg px-4 py-3"
             ></textarea>
           </div>
 
@@ -45,6 +54,13 @@ export default function Contact() {
             Send Message
           </button>
         </form>
+
+        {sent && (
+          <p className="text-green-600 text-center font-semibold mt-4">
+            Message Sent Successfully!
+          </p>
+        )}
+
       </div>
     </div>
     </>
