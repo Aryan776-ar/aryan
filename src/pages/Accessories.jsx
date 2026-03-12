@@ -8,7 +8,9 @@ import airpodspro from "../assets/air2pro.jpg";
 import airpodsmax from "../assets/airpodsmax1.jpg";
 import airtag from "../assets/airtags.jpg";
 import earphones from "../assets/earphone.jpg";
-
+import magsafecharger from "../assets/magsafecharger.jpg";
+import magsafebattery from "../assets/magsafebattery.jpg";
+import magsafewireless from "../assets/magsafewireless.jpg";
 export default function Accessories() {
   const navigate = useNavigate();
   const { addToCart } = useContext(CartContext); // CartContext
@@ -20,6 +22,9 @@ export default function Accessories() {
     { id: 4, name: "AirPods Max", price: 95000, image: airpodsmax },
     { id: 5, name: "AirTag 4 Pack", price: 16000, image: airtag },
     { id: 6, name: "Apple Earphones", price: 5500, image: earphones },
+    { id: 7, name: "MagSafe Charger", price: 5990, image: magsafecharger },
+    { id: 8, name: "MagSafe Battery", price: 7900, image: magsafebattery },
+    { id: 9, name: "MagSafe Wireless Charger", price: 8490, image: magsafewireless },
   ];
 
   return (
