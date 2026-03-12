@@ -58,13 +58,7 @@ export default function Shop() {
       price: 69000,
       image: phone9,
     },
-    {
-      id: 6,
-      name: "AirPods Pro",
-      price: 38500,
-      image:
-        "https://images.unsplash.com/photo-1606220588913-b3aacb4d2f46?q=80&w=1200",
-    },
+   
       {
       id: 7,
       name: "iPhone 17 Air",
@@ -189,13 +183,12 @@ export default function Shop() {
                 <h3 className="text-white text-lg mt-4">{product.name}</h3>
                 <p className="text-gray-400 mb-4">Rs.{product.price.toLocaleString()}</p>
               </div>
-
-              <button
-                onClick={() => addToCart(product)}
-                className="w-full border border-white text-white py-2 rounded-full hover:bg-white hover:text-black mt-2"
-              >
-                Add to Bag
-              </button>
+<button
+  onClick={() => addToCart(product)}
+  className="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white py-3 rounded-xl font-medium hover:scale-105 transform transition duration-300 shadow-md hover:shadow-xl mt-2"
+>
+  Add to Bag
+</button>
             </div>
           ))}
         </div>

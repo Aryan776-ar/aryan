@@ -7,7 +7,7 @@ export default function Orders() {
       id: "ORD-1023",
       date: "March 1, 2026",
       status: "Delivered",
-      total: "$1299",
+      total: "Rs.212,999",
       items: [
         {
           name: "iPhone 15 Pro",
@@ -20,7 +20,7 @@ export default function Orders() {
       id: "ORD-1011",
       date: "February 14, 2026",
       status: "Shipped",
-      total: "$899",
+      total: "Rs.8,999",
       items: [
         {
           name: "AirPods Pro",
@@ -33,7 +33,7 @@ export default function Orders() {
       id: "ORD-1002",
       date: "January 30, 2026",
       status: "Processing",
-      total: "$2199",
+      total: "Rs.219,999",
       items: [
         {
           name: "MacBook Air M2",
