@@ -26,87 +26,96 @@ export default function Shop() {
   const { addToCart } = useContext(CartContext);
 
   const products = [
-    {
+     {
       id: 1,
-      name: "iPhone 14 Pro Max",
-      price: 191990,
-      image: phone14,
+      name: "iPhone 17 Pro Max",
+      price: 239999,
+      image: iphone17promax,
+    },
+       {
+      id: 2,
+      name: "iPhone 16 Pro Max",
+      price: 207000,
+      image: phone16,
     },
     {
-      id: 2,
+      id: 3,
       name: "iPhone 15 Pro Max",
       price: 210000,
       image: phone15,
     },
     {
-      id: 3,
+      id: 4,
+      name: "iPhone 14 Pro Max",
+      price: 191990,
+      image: phone14,
+    },
+      {
+      id: 5,
+      name: "iPhone 13 Pro Max",
+      price: 191990,
+      image: iphone13promax,
+    },
+      {
+      id: 6,
+      name: "iPhone 12 Pro Max",
+      price: 171000,
+      image: iphone12promax,
+    },
+    {
+      id: 7,
       name: "MacBook Pro M3",
       price: 146999,
       image:
         "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?q=80&w=1200",
     },
     {
-      id: 4,
+      id: 8,
       name: "MacBook Air M2",
       price: 119999,
       image:
         "https://images.unsplash.com/photo-1541807084-5c52b6b3adef?q=80&w=1200",
     },
     {
-      id: 5,
+      id: 9,
       name: "Apple Watch Series 9",
       price: 69000,
       image: phone9,
     },
    
       {
-      id: 7,
+      id: 10,
       name: "iPhone 17 Air",
       price: 178999,
       image: phoneair,
     },
-         {
-      id: 8,
-      name: "iPhone 16 Pro Max",
-      price: 207000,
-      image: phone16,
-    },
+      
           {
-      id: 9,
+      id: 11,
       name: "iPhone 12",
       price: 85100,
       image: iphone12,
     },
           {
-      id: 10,
+      id: 12,
       name: "iPhone 12 Pro",
       price: 156100,
       image: iphone12pro,
     },
+        
           {
-      id: 11,
-      name: "iPhone 12 Pro Max",
-      price: 171000,
-      image: iphone12promax,
-    },
-          {
-      id: 12,
+      id: 13,
       name: "iPhone 13",
       price: 80399,
       image: iphone13,
     },
           {
-      id: 13,
+      id: 14,
       name: "iPhone 13 Pro",
       price: 174990,
       image: iphone13pro,
     },
-          {
-      id: 14,
-      name: "iPhone 13 Pro Max",
-      price: 191990,
-      image: iphone13promax,
-    },
+        
           {
       id: 15,
       name: "iPhone 14",
@@ -150,12 +159,7 @@ export default function Shop() {
       price: 161599,
       image: iphone17,
     },
-          {
-      id: 22,
-      name: "iPhone 17 Pro Max",
-      price: 239999,
-      image: iphone17promax,
-    },
+         
 
   ];
 
